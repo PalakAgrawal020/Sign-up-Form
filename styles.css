@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'NorseBold'; /* Choose a custom name for your font */
+    src: url('Norse-Bold.otf') format('opentype');
+}
+  
+
+#body-div {
+    background-color: black;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#img-div{
+    width: 60%;
+    height: 100%;
+    /*  */
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    /*  */
+    object-fit: cover;
+}
+
+#name-div {
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-div {
+    width: 17%;
+}
+
+#odin-div{
+    color: white;
+    font-family: 'NorseBold';
+    font-size: xx-large;
+}
+
+#form-div {
+    background-color: #FAF9F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset {
+    border: 0;
+    box-shadow: 0px 3px 3px rgb(151, 150, 150, 0.5);
+    margin: 0;
+    background-color: white;
+}
+
+#para-div p,
+#line-div p{
+    font-size: large;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 90px;
+}
+
+#line-div {
+    padding-bottom: 30px;
+}
+
+
+legend{
+    font-size: large;
+    font-family: sans-serif;
+    color: rgb(62, 61, 61);
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.label-input{
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+label{
+    font-size: xx-small;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(35, 34, 34);
+}
+
+input {
+    border: none;
+    outline: none;
+    border: 1px solid #E5E7EB;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+}
+
+input:focus-within{
+    border: 1px solid rgb(18, 18, 130);
+    box-shadow: 2px 2px 2px rgb(51, 51, 53, 0.2);
+}
+
+#btn-div {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+#log-in {
+    padding-left: 30px;
+}
+
+#log-in {
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: rgb(62, 61, 61);
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+button {
+    color: white;
+    font-weight: 700;
+    background-color: #596D48;
+    border: none;
+    padding: 10px 35px 10px 35px;
+    border-radius: 5px;
+}
+
+.group {
+    display: flex;
+}
+
+input[type='password']:invalid{
+    border: 1px solid rgb(172, 42, 42);
+}
+
+.invalid {
+    font-size: x-small;
+    font-family: sans-serif;
+    color: rgb(172, 42, 42);
+}

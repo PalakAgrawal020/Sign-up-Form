@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="body-div">
+        <div id="img-div">
+            <img src="bg-img.jpg" alt="">
+            <div id="name-div">
+                <div id="logo-div"><img src="odin-lined.png" alt=""></div>
+                <div id="odin-div"><h1>ODIN</h1></div>
+            </div>
+        </div>
+        <div id="form-div">
+            <div id="para-div">
+                <p><strong>This is not a real online service!
+                    You know you need something like this in your 
+                    life to help you realize your deepest dreams. <br>
+                    Sign up <em>now</em> to get started.
+                </strong></p>
+            </div>
+            <div id="line-div">
+                <p><strong>You <em>know</em> you want to.</strong></p>
+            </div>
+            <div id="form-here">
+                <form action="">
+                    <fieldset> 
+                        <legend><strong>Let's do this!</strong></legend>
+
+                        <div class="group">
+                            <div class="label-input">
+                                <label for="firstname">FIRST NAME</label>
+                                <input type="text" name="firstname" id="firstname">
+                            </div>
+
+                            <div class="label-input">
+                                <label for="lastname">LAST NAME</label>
+                                <input type="text" name="lastname" id="lastname">
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <div class="label-input">
+                                <label for="mail">EMAIL</label>
+                                <input type="email" id="mail" name="email">
+                            </div>
+
+                            <div class="label-input">
+                                <label for="number">PHONE NUMBER</label>
+                                <input type="tel" name="number" id="number">
+                            </div>
+                        </div>
+
+                        <div class="group">
+                            <div class="label-input">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password" id="password" class="pass-error" minlength='8' required>
+                                <p class="invalid">*enter 8 characters</p>
+                            </div>
+                        
+                            <div class="label-input">
+                                <label for="re-enter">CONFIRM PASSWORD</label>
+                                <input type="password" name="re-enter" id="re-enter" class="pass-error" minlength="8" required>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <div id="btn-div">
+                        <button>Create Account</button>
+                    </div>
+                </form>
+            </div>
+
+            
+            <div id="log-in">
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
